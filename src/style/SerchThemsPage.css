@@ -1,0 +1,55 @@
+.header {
+    width: 154px;
+    height: 44px;
+    background-color: #8BC0CF;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.text {
+    margin: auto;
+}
+
+.buttonsThems {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 46px;
+}
+
+.buttons {
+    width: 65px;
+    height: 65px;
+}
+
+.color1 {
+    background-color: #70BFD8;
+}
+
+.color2 {
+    background-color: #FFAEB3;
+}
+
+.color3 {
+    background-color: #FFDF8C;
+}
+
+.color4 {
+    background-color: #B2EDA3;
+}
+
+.color5 {
+    background-color: #BEB9FF;
+}
+
+.color6 {
+    background-color: #F9B6FF;
+}

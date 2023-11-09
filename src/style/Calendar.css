@@ -1,0 +1,10 @@
+.flexInCalendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.summer {
+    width: 380px;
+    height: 159px;
+    border-radius: 10px;
+}

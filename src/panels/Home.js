@@ -1,25 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import'./Persik.css';
-import Colba from '../img/Colba.png'
-import Example from './Example';
-import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
-
-/*const formateDateToString = (date) => {
-	let dd = (date.getDate() < 10 ? '0' : '') + date.getDate();
-  
-	let mm = ((date.getMonth() + 1) < 10 ? '0' : '') + (date.getMonth() + 1);
-  
-	return dd + "." + mm;
-  }
-
-let a = new Date();
-document.getElementById('todayDate').innerHTML = formateDateToString(a);*/
+import Colba from '../img/Colba.png';
+import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar, Footer } from '@vkontakte/vkui';
+import BurgerButton from '../img/BurgerButton.svg';
+import Add from '../img/Add.svg';
+import CalendarImg from '../img/CalendarImg.svg';
+import Statistics from '../img/Statistics.svg';
+//import { Calendar } from '@vkontakte/vkui';
+import { UserFooter } from '../elements/UserFooter';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>MoodTrack</PanelHeader>
-		{fetchedUser &&
+		{/*{fetchedUser &&
 		<Group header={<Header mode="secondary">User Data Fetched with VK Bridge</Header>}>
 			<Cell
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
@@ -27,30 +21,44 @@ const Home = ({ id, go, fetchedUser }) => (
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
-		</Group>}
-		<Div className='todayDate'>
+		</Group>}*/}
+
+		<Div className='HightBitton'>
+			<Button className='hightButton' stretched size="l" mode="secondary" onClick={go} data-to="option">
+				<img className="imgInButton" src={BurgerButton} alt="Colba"/>
+			</Button>
+		</Div>
+
+		{/*<Group main={<Header mode="secondary">Date and Colba</Header> }>
 			
+		</Group>*/}
+		<Div className='todayDate'>
+			{/*<Example />*/}
 		</Div>
+
 		<Div className='colbastyle'>
-		<img className="Colba" src={Colba} alt="Colba"/>
+			<img className="Colba" src={Colba} alt="Colba"/>
+			{/*<Calendar />*/}
 		</Div>
-		<Group footer={<Header mode="secondary">Navigation Example</Header>}>
-			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					Menu
+
+		{/*<Group className='footer' footer={<Header mode="secondary">Navigation Example</Header>}>
+			<Div className='downPanel'>
+				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="calendar">
+					<img className="imgInButton" src={CalendarImg} alt="CalendarButton"/>
 				</Button>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					Calendar
+				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="emoji">
+					<img className="imgInButton" src={Add} alt="AddButton"/>
 				</Button>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					Plus
+				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="persik">
+					<img className="imgInButton" src={Statistics} alt="Colba"/>
 				</Button>
 			</Div>
-		</Group>
+	</Group>*/}
+	<UserFooter />
 	</Panel>
 );
 
-Home.propTypes = {
+/*Home.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 	fetchedUser: PropTypes.shape({
@@ -61,6 +69,6 @@ Home.propTypes = {
 			title: PropTypes.string,
 		}),
 	}),
-};
+};*/
 
 export default Home;

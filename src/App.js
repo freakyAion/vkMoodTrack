@@ -5,6 +5,10 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
+import Option from './panels/Option';
+import SerchThems from './panels/SerchThems';
+import UserCalendar from './panels/UserCalendar';
+import SerchEmoji from './panels/SerchEmoji';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -33,6 +37,10 @@ const App = () => {
 							<View activePanel={activePanel}>
 								<Home id='home' fetchedUser={fetchedUser} go={go} />
 								<Persik id='persik' go={go} />
+								<Option id='option' go={go} />
+								<SerchThems id='thems' go={go} />
+								<UserCalendar id='calendar' go={go} />
+								<SerchEmoji id='emoji' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

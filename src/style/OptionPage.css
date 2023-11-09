@@ -1,0 +1,29 @@
+.closeButton {
+    max-width: 20px;
+    max-height: 20px;
+    background-color: transparent;
+}
+
+.buttonOptions {
+    margin-top: 154px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.optionButton {
+    width: 328px;
+    height: 79px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8BC0CF;
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 83.333% */
+    letter-spacing: 0.1px; 
+}
