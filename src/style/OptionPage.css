@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
 .closeButton {
     max-width: 20px;
     max-height: 20px;
@@ -6,6 +8,7 @@
 
 .buttonOptions {
     margin-top: 154px;
+    margin-bottom: 198px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -13,7 +16,7 @@
 
 .optionButton {
     width: 328px;
-    height: 79px;
+    min-height: 79px;
     margin-left: auto;
     margin-right: auto;
     background-color: #8BC0CF;

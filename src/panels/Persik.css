@@ -44,3 +44,19 @@
 .footer {
   margin-top: auto;
 }
+
+.todayDateDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.todayDate {
+  margin-left: auto;
+  margin-right: auto;
+  color: #4B8597;
+  font-family: Comfortaa;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

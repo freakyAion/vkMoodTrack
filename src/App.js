@@ -9,6 +9,9 @@ import Option from './panels/Option';
 import SerchThems from './panels/SerchThems';
 import UserCalendar from './panels/UserCalendar';
 import SerchEmoji from './panels/SerchEmoji';
+import BeutifulEmogi from './panels/BeutifulEmogi';
+import GoodEmogi from './panels/GoodEmogi';
+import NormalEmogi from './panels/NormalEmogi';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -41,6 +44,9 @@ const App = () => {
 								<SerchThems id='thems' go={go} />
 								<UserCalendar id='calendar' go={go} />
 								<SerchEmoji id='emoji' go={go} />
+								<BeutifulEmogi id='beutiful' go={go} />
+								<GoodEmogi id='good' go={go} />
+								<NormalEmogi id='normal' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

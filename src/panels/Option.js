@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Div, Panel, PanelHeader} from '@vkontakte/vkui';
+import { Button, Div, Group, Panel, PanelHeader} from '@vkontakte/vkui';
 import CloseButton from '../img/CloseButton.svg'
 import '../style/OptionPage.css';
 
@@ -9,21 +9,23 @@ const Option = ({id, go}) => (
 	<Panel id={id}>
 		<PanelHeader>Настройки</PanelHeader>
 
-		<Div className='buttonBack'>
-			<Button className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
-				<img className="imgClose" src={CloseButton} alt="Close"/>
-			</Button>
-		</Div>
+		<Group>
+			<Div className='buttonBack'>
+				<Button className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
+					<img className="imgClose" src={CloseButton} alt="Close"/>
+				</Button>
+			</Div>
 
-		<Div className='buttonOptions'>
-			<Button className='optionButton' stretched size="l" mode="secondary" onClick={go} data-to="thems">
-				<label className='text'>Темы</label>
-			</Button>
+			<Div className='buttonOptions'>
+				<Button className='optionButton' stretched size="l" mode="secondary" onClick={go} data-to="thems">
+					<label className='text'>Темы</label>
+				</Button>
 
-			<Button className='optionButton' stretched size="l" mode="secondary" onClick={go} data-to="persik">
-				<label className='text'>Напоминания</label>
-			</Button>
-		</Div>
+				<Button className='optionButton second' stretched size="l" mode="secondary" onClick={go} data-to="persik">
+					<label className='text'>Напоминания</label>
+				</Button>
+			</Div>
+		</Group>
 	</Panel>
 )
 /*const Option = props => (

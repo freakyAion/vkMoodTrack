@@ -1,17 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
 .header {
     width: 100%;
     height: 63px;
     border: none;
 }
 
+.Emoji {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.buttonEmogi {
+    width: 500px;
+    min-height: auto;
+    align-items: center;
+    background-color: transparent;
+}
+
+.locationElements {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.img {
+    margin-right: auto;
+    width: 63px;
+    height: 63px;
+}
+
+.smallText {
+    margin: auto;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
 .text {
-    color: #FFFFFF;
+    color: #FFF;
+    font-family: Comfortaa;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.buttonEmogi {
-    max-width: 500px;
 }

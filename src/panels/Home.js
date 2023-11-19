@@ -9,6 +9,7 @@ import CalendarImg from '../img/CalendarImg.svg';
 import Statistics from '../img/Statistics.svg';
 //import { Calendar } from '@vkontakte/vkui';
 import { UserFooter } from '../elements/UserFooter';
+import { GetCurrentDate } from '../elements/GetCurrentDate';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -22,26 +23,24 @@ const Home = ({ id, go, fetchedUser }) => (
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
 		</Group>}*/}
+		<Group>
+			<Div className='HightBitton'>
+				<Button className='hightButton' stretched size="l" mode="secondary" onClick={go} data-to="option">
+					<img className="imgInButton" src={BurgerButton} alt="Colba"/>
+				</Button>
 
-		<Div className='HightBitton'>
-			<Button className='hightButton' stretched size="l" mode="secondary" onClick={go} data-to="option">
-				<img className="imgInButton" src={BurgerButton} alt="Colba"/>
-			</Button>
-		</Div>
+				<Div className='todayDateDiv'>
+					<label className='todayDate'>
+						{GetCurrentDate()}
+					</label>
+				</Div>
 
-		{/*<Group main={<Header mode="secondary">Date and Colba</Header> }>
-			
-		</Group>*/}
-		<Div className='todayDate'>
-			{/*<Example />*/}
-		</Div>
-
-		<Div className='colbastyle'>
-			<img className="Colba" src={Colba} alt="Colba"/>
+				<Div className='colbastyle'>
+					<img className="Colba" src={Colba} alt="Colba"/>
 			{/*<Calendar />*/}
-		</Div>
-
-		{/*<Group className='footer' footer={<Header mode="secondary">Navigation Example</Header>}>
+				</Div>
+			</Div>
+			
 			<Div className='downPanel'>
 				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="calendar">
 					<img className="imgInButton" src={CalendarImg} alt="CalendarButton"/>
@@ -53,8 +52,13 @@ const Home = ({ id, go, fetchedUser }) => (
 					<img className="imgInButton" src={Statistics} alt="Colba"/>
 				</Button>
 			</Div>
-	</Group>*/}
-	<UserFooter />
+		</Group>
+		
+
+		{/*<Group main={<Header mode="secondary">Date and Colba</Header> }>
+			
+		</Group>*/}
+	{/*<UserFooter />*/}
 	</Panel>
 );
 

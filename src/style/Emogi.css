@@ -1,0 +1,114 @@
+.elementsEmogi {
+    display: flex;
+    flex-direction: column;
+}
+
+.moodBlock {
+    display: flex;
+    flex-direction: row;
+    height: 98px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 0;
+}
+
+.emogiImg {
+    width: 97px;
+    height: 98px;
+    padding: 0;
+}
+
+.btnBackToEmojiSerch {
+    max-width: 30px;
+    /*max-height: 30px;*/
+    margin-top: auto;
+    padding: auto;
+}
+
+.textHeader {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto
+}
+
+.textElement {
+    display: flex;
+    width: auto;
+    padding: 10;
+}
+
+.text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.moreEmoji {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.textInEmotion {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.8%; /* 25.76px */
+    letter-spacing: 0.2px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding: auto;
+}
+
+.buttonsSerchEmogi {
+    background-color: #D9D9D9;
+    height: 43px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: auto;
+}
+
+.writingBar {
+    background-color: #8BC0CF;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100px;
+}
+
+.headerInWeiteBar {
+    padding-top: 26px;
+    text-align: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.bar {
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border: 10px;
+}
