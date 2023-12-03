@@ -1,0 +1,89 @@
+.elmentsInHeader {
+    background-color: #8BC0CF;
+    border-radius: 8px;
+    width: 176px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnNext {
+    min-width: 10px;
+    background-color: transparent;
+    margin: auto;
+}
+
+.textMonth {
+    color: var(--light-button-primary-foreground, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+    margin: auto;
+}
+
+.btnChoise {
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+    justify-content: center;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    min-width: 72px;
+    min-height: 44px;
+}
+
+.month {
+    background-color: transparent;
+    border: #8BC0CF;
+}
+
+.year {
+    background-color: #8BC0CF;
+    border: #8BC0CF;
+}
+
+.textInMonth {
+    color: #8BC0CF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+}
+
+.textInYear {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+}
+
+.pieCharmDiogramm {
+    display: flex;
+    margin-bottom: 111px;
+}
+
+.pieCharm {
+    width: 283px;
+    height: 283px;
+    margin-top: 53px;
+    margin-left: auto;
+    margin-right: auto;
+}

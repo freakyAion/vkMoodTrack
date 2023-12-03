@@ -35,7 +35,7 @@ const UserCalendar = ({id, go}) => (
 						<img className='imgInButton' src={Add} alt="AddButton" />
 					</Button>
 
-					<Button className='button' stretched size="l" mode="secondary">
+					<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="statistics">
 						<img className='imgInButton' src={Statistics} alt="Statistics" />
 					</Button>
 				</Div>

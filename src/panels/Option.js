@@ -17,9 +17,9 @@ const Option = ({id, go}) => (
 			</Div>
 
 			<Div className='buttonOptions'>
-				<Button className='optionButton' stretched size="l" mode="secondary" onClick={go} data-to="thems">
+				{/*<Button className='optionButton' stretched size="l" mode="secondary" onClick={go} data-to="thems">
 					<label className='text'>Темы</label>
-				</Button>
+				</Button>*/}
 
 				<Button className='optionButton second' stretched size="l" mode="secondary" onClick={go} data-to="persik">
 					<label className='text'>Напоминания</label>
