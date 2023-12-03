@@ -6,9 +6,13 @@
 }
 
 .colbastyle {
+display: flex;
+  /*Напиши нармально*/
+}
+
+.colba {
   margin-left: auto;
   margin-right: auto;
-  /*Напиши нармально*/
 }
 
 .conteynerCalendar {

@@ -14,7 +14,7 @@
 }
 
 .buttonEmogi {
-    width: 500px;
+    width: 360px;
     min-height: auto;
     align-items: center;
     background-color: transparent;
@@ -23,7 +23,7 @@
 .locationElements {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 300px;
 }
 
 .img {

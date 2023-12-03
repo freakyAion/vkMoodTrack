@@ -5,9 +5,9 @@ import Add from '../img/Add.svg';
 import CalendarImg from '../img/CalendarImg.svg';
 import Statistics from '../img/Statistics.svg';
 
-export function UserFooter() {
+export function UserFooter({id, go}) {
 	return (
-		<Group>
+		<Group id={id}>
 			<Div className='downPanel'>
 				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="persik">
 					<img className="imgInButton" src={CalendarImg} alt="CalendarButton"/>

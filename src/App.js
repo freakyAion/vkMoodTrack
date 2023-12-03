@@ -12,6 +12,10 @@ import SerchEmoji from './panels/SerchEmoji';
 import BeutifulEmogi from './panels/BeutifulEmogi';
 import GoodEmogi from './panels/GoodEmogi';
 import NormalEmogi from './panels/NormalEmogi';
+import BadEmoji from './panels/Emoji/BadEmoji';
+import VeryBadEmoji from './panels/Emoji/VeryBadEmoji';
+import StatisticsEmogi from './panels/StatisticsEmogi';
+import { render } from 'react-dom';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -47,6 +51,9 @@ const App = () => {
 								<BeutifulEmogi id='beutiful' go={go} />
 								<GoodEmogi id='good' go={go} />
 								<NormalEmogi id='normal' go={go} />
+								<BadEmoji id='bad' go={go} />
+								<VeryBadEmoji id='veryBad' go={go} />
+								<StatisticsEmogi id='statistics' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

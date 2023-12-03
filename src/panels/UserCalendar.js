@@ -1,7 +1,6 @@
 import React from 'react';
 import { Calendar, Button, Div, Panel, PanelHeader, Group, Header } from '@vkontakte/vkui';
 import BurgerButton from '../img/BurgerButton.svg';
-//import UserFooter from '../elements/UserFooter';
 import '../style/Calendar.css';
 import './Persik.css';
 import Add from '../img/Add.svg';
@@ -21,12 +20,10 @@ const UserCalendar = ({id, go}) => (
 					</Button>
 				</Div>
 
-        		<Div className='colbastyle'>
-					<Calendar className='calendar' />
-				</Div>
+				<Div className='calendarScreen'>
+						<Calendar className='calendar' />
 
-				<Div className='colbastyle'>
-					<img className='summer' src={Summer} alt="Summer" />
+						<img className='summer' src={Summer} alt="Summer" />
 				</Div>
 
 				<Div className='downPanel'>

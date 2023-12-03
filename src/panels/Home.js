@@ -4,11 +4,10 @@ import'./Persik.css';
 import Colba from '../img/Colba.png';
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar, Footer } from '@vkontakte/vkui';
 import BurgerButton from '../img/BurgerButton.svg';
+import { UserFooter } from '../elements/UserFooter';
 import Add from '../img/Add.svg';
 import CalendarImg from '../img/CalendarImg.svg';
 import Statistics from '../img/Statistics.svg';
-//import { Calendar } from '@vkontakte/vkui';
-import { UserFooter } from '../elements/UserFooter';
 import { GetCurrentDate } from '../elements/GetCurrentDate';
 
 const Home = ({ id, go, fetchedUser }) => (
@@ -36,7 +35,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Div>
 
 				<Div className='colbastyle'>
-					<img className="Colba" src={Colba} alt="Colba"/>
+					<img className="colba" src={Colba} alt="Colba"/>
 			{/*<Calendar />*/}
 				</Div>
 			</Div>
@@ -48,17 +47,17 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="emoji">
 					<img className="imgInButton" src={Add} alt="AddButton"/>
 				</Button>
-				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					<img className="imgInButton" src={Statistics} alt="Colba"/>
+				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="statistics">
+					<img className="imgInButton" src={Statistics} alt="Statistics"/>
 				</Button>
 			</Div>
+			{/*<UserFooter />*/}
 		</Group>
 		
 
 		{/*<Group main={<Header mode="secondary">Date and Colba</Header> }>
 			
 		</Group>*/}
-	{/*<UserFooter />*/}
 	</Panel>
 );
 
