@@ -9,6 +9,9 @@ import Add from '../img/Add.svg';
 import CalendarImg from '../img/CalendarImg.svg';
 import Statistics from '../img/Statistics.svg';
 import { GetCurrentDate } from '../elements/GetCurrentDate';
+import {Vial} from '../elements/vial'
+
+const emotions = ['perfect', 'good', 'normal', 'bad', 'awful']
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -35,7 +38,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Div>
 
 				<Div className='colbastyle'>
-					<img className="colba" src={Colba} alt="Colba"/>
+					<Vial emotions={emotions}/>
 			{/*<Calendar />*/}
 				</Div>
 			</Div>
