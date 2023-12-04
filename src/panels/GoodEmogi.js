@@ -6,6 +6,7 @@ import '../style/Emogi.css';
 import CloseButton from '../img/CloseButton.svg';
 import Good from '../img/Emoji/Good.svg';
 import BackToEmogiSerch from '../img/BackToEmogiSerch.svg';
+import {Vial} from "../elements/vial.js"
 
 const GoodEmogi = ({id, go}) => (
     <Panel id={id}>
@@ -25,7 +26,7 @@ const GoodEmogi = ({id, go}) => (
         <Div className='elementsEmogi'>
             <Div className='moodBlock'>
                 <img className='emogiImg' src={Good} alt='Beutiful'/>
-                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={go} data-to="emoji">
+                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={() => <Vial emotions={['perfect', 'good', 'normal', 'bad', 'awful']} />} data-to="emoji">
                     <img className='imgBackToEmojiSerch' src={BackToEmogiSerch} alt='back' />
                 </Button>
             </Div>

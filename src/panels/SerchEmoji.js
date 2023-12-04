@@ -23,7 +23,7 @@ const SerchEmoji = ({id, go}) => (
             </Div>
 
             <Div className='header'>
-                <label className='text'>Выбирите эмоцию</label>
+                <label className='text'>Выберите эмоцию</label>
             </Div>
 
             <Div className='Emoji'>
