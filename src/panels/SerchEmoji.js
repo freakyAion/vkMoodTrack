@@ -58,7 +58,7 @@ const SerchEmoji = ({id, go}) => (
                 <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="veryBad">
                     <Div className='locationElements'>
                         <img className='img' src={VeryBad} alt="VeryBadEmoji" />
-                        <label className='smallText'>Ужастно</label>
+                        <label className='smallText'>Ужасно</label>
                     </Div>
                 </Button>
             </Div>

@@ -11,7 +11,8 @@ import Statistics from '../img/Statistics.svg';
 import { GetCurrentDate } from '../elements/GetCurrentDate';
 import {Vial, changeEmotionClasses} from '../elements/vial'
 
-const updatedClasses = changeEmotionClasses(currentClasses, indexToUpdate, 'newClass');
+var index = 0;
+const updateClasses = changeEmotionClasses(['perfect', 'good', 'normal', 'bad', 'awful'], index, 'newClass');
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>

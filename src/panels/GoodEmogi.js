@@ -68,7 +68,7 @@ const GoodEmogi = ({id, go}) => (
                     <label className='textInEmotion'>преданность</label>
                 </Button>
                 <Button className='buttonsSerchEmogi' mode="secondary">
-                    <label className='textInEmotion'>добрата</label>
+                    <label className='textInEmotion'>доброта</label>
                 </Button>
             </Div>
 
