@@ -7,13 +7,13 @@ import CloseButton from '../../img/CloseButton.svg'
 import VeryBad from '../../img/Emoji/VeryBad.svg';
 import BackToEmogiSerch from '../../img/BackToEmogiSerch.svg';
 
-const VeryBadEmoji = ({id, go}) => (
+const VeryBadEmoji = ({id, go, handleButtonClick}) => (
     <Panel id={id}>
         <PanelHeader>Ужасное настроение</PanelHeader>
 
         <Group>
         <Div className='buttonBack'>
-			    <Button className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
+			    <Button className='closeButton' stretched size="l" mode="secondary" onClick={() => handleButtonClick('awful')} data-to="home">
 				    <img className="imgClose" src={CloseButton} alt="Close"/>
 			    </Button>
 		    </Div>

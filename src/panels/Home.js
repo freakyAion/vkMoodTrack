@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import PropTypes from 'prop-types';
 import'./Persik.css';
 import Colba from '../img/Colba.png';
@@ -9,12 +9,10 @@ import Add from '../img/Add.svg';
 import CalendarImg from '../img/CalendarImg.svg';
 import Statistics from '../img/Statistics.svg';
 import { GetCurrentDate } from '../elements/GetCurrentDate';
-import {Vial, changeEmotionClasses} from '../elements/vial'
+import {Vial} from '../elements/vial'
 
-var index = 0;
-const updateClasses = changeEmotionClasses(['perfect', 'good', 'normal', 'bad', 'awful'], index, 'newClass');
-
-const Home = ({ id, go, fetchedUser }) => (
+const Home = ({ id, go, fetchedUser, emotions}) => {
+	return(
 	<Panel id={id}>
 		<PanelHeader>MoodTrack</PanelHeader>
 		{/*{fetchedUser &&
@@ -39,7 +37,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Div>
 
 				<Div className='colbastyle'>
-					<Vial emotions={['perfect', 'good', 'normal', 'bad', 'awful']}/>
+					<Vial emotions={emotions}/>
 			{/*<Calendar />*/}
 				</Div>
 			</Div>
@@ -54,6 +52,9 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="statistics">
 					<img className="imgInButton" src={Statistics} alt="Statistics"/>
 				</Button>
+				<button onClick={() => handleButtonClick("bad")}>
+					Test
+				</button>
 			</Div>
 			{/*<UserFooter />*/}
 		</Group>
@@ -63,7 +64,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			
 		</Group>*/}
 	</Panel>
-);
+)};
 
 /*Home.propTypes = {
 	id: PropTypes.string.isRequired,

@@ -7,7 +7,7 @@ import CloseButton from '../img/CloseButton.svg';
 import Beutiful from '../img/Emoji/Beutiful.svg';
 import BackToEmogiSerch from '../img/BackToEmogiSerch.svg';
 
-const BeutifulEmogi = ({id, go}) => (
+const BeutifulEmogi = ({id, go, handleButtonClick}) => (
     <Panel id={id}>
         <PanelHeader>Отличное настроение</PanelHeader>
         
@@ -25,7 +25,7 @@ const BeutifulEmogi = ({id, go}) => (
         <Div className='elementsEmogi'>
             <Div className='moodBlock'>
                 <img className='emogiImg' src={Beutiful} alt='Beutiful'/>
-                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={go} data-to="emoji">
+                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={() => handleButtonClick('perfect')} data-to="emoji">
                     <img className='imgBackToEmojiSerch' src={BackToEmogiSerch} alt='back' />
                 </Button>
             </Div>

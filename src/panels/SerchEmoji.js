@@ -11,13 +11,13 @@ import Normal from '../img/Emoji/Normal.svg';
 import Bad from '../img/Emoji/Bad.svg';
 import VeryBad from '../img/Emoji/VeryBad.svg';
 
-const SerchEmoji = ({id, go}) => (
+const SerchEmoji = ({id, go, handleButtonClick}) => (
     <Panel id={id}>
         <PanelHeader>Выбор эмоции</PanelHeader>
 
         <Group>
             <Div className='buttonBack'>
-                <Button className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
+                <Button handleButtonClick={handleButtonClick} className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
                     <img className='imgClose' src={CloseButton} alt="Close" />
                 </Button>
             </Div>
@@ -27,35 +27,35 @@ const SerchEmoji = ({id, go}) => (
             </Div>
 
             <Div className='Emoji'>
-                <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="beutiful">
+                <Button handleButtonClick={handleButtonClick} className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="beutiful">
                     <Div className='locationElements'>
                         <img className='img' src={Beutiful} alt="BeutifulEmoji" />
                         <label className='smallText'>Отлично</label>
                     </Div>
                 </Button>
 
-                <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="good">
+                <Button handleButtonClick={handleButtonClick}  className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="good">
                     <Div className='locationElements'>
                         <img className='img' src={Good} alt="GoodEmoji" />
                         <label className='smallText'>Хорошо</label>
                     </Div>              
                 </Button>
 
-                <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="normal">
+                <Button handleButtonClick={handleButtonClick}  className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="normal">
                     <Div className='locationElements'>
                         <img className='img' src={Normal} alt="NormalEmoji" />
                         <label className='smallText'>Нормально</label>
                     </Div>              
                 </Button>
 
-                <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="bad">
+                <Button handleButtonClick={handleButtonClick}  className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="bad">
                     <Div className='locationElements'>
                         <img className='img' src={Bad} alt="BadEmoji" />
                         <label className='smallText'>Плохо</label>
                     </Div>
                 </Button>
 
-                <Button className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="veryBad">
+                <Button handleButtonClick={handleButtonClick}  className='buttonEmogi'stretched size="l" mode="secondary" onClick={go} data-to="veryBad">
                     <Div className='locationElements'>
                         <img className='img' src={VeryBad} alt="VeryBadEmoji" />
                         <label className='smallText'>Ужасно</label>

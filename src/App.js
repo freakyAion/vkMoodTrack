@@ -18,6 +18,19 @@ import StatisticsEmogi from './panels/StatisticsEmogi';
 import { render } from 'react-dom';
 
 const App = () => {
+
+	const initialEmotions = ['empty', 'empty', 'empty'];
+	const [emotions, setEmotions] = useState(initialEmotions);
+	const [currentIndex, setCurrentIndex] = useState(2);
+
+	const handleButtonClick = (emotion) => {
+	    const updatedEmotions = [...emotions];
+	    updatedEmotions[currentIndex] = emotion;
+	    const nextIndex = (currentIndex - 1) % emotions.length;
+	    setEmotions(updatedEmotions);
+	    setCurrentIndex(nextIndex);
+	};
+
 	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
@@ -42,17 +55,17 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<Home id='home' fetchedUser={fetchedUser} go={go} />
+								<Home emotions={emotions} id='home' fetchedUser={fetchedUser} go={go} />
 								<Persik id='persik' go={go} />
 								<Option id='option' go={go} />
 								<SerchThems id='thems' go={go} />
 								<UserCalendar id='calendar' go={go} />
 								<SerchEmoji id='emoji' go={go} />
-								<BeutifulEmogi id='beutiful' go={go} />
-								<GoodEmogi id='good' go={go} />
-								<NormalEmogi id='normal' go={go} />
-								<BadEmoji id='bad' go={go} />
-								<VeryBadEmoji id='veryBad' go={go} />
+								<BeutifulEmogi handleButtonClick={handleButtonClick} id='beutiful' go={go} />
+								<GoodEmogi handleButtonClick={handleButtonClick} id='good' go={go} />
+								<NormalEmogi handleButtonClick={handleButtonClick} id='normal' go={go} />
+								<BadEmoji handleButtonClick={handleButtonClick} id='bad' go={go} />
+								<VeryBadEmoji handleButtonClick={handleButtonClick} id='veryBad' go={go} />
 								<StatisticsEmogi id='statistics' go={go} />
 							</View>
 						</SplitCol>

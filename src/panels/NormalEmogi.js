@@ -7,7 +7,7 @@ import CloseButton from '../img/CloseButton.svg';
 import Normal  from '../img/Emoji/Normal.svg';
 import BackToEmogiSerch from '../img/BackToEmogiSerch.svg';
 
-const NormalEmogi = ({id, go}) => (
+const NormalEmogi = ({id, go, handleButtonClick}) => (
     <Panel id={id}>
         <PanelHeader>Нормальное настроение</PanelHeader>
 
@@ -25,7 +25,7 @@ const NormalEmogi = ({id, go}) => (
         <Div className='elementsEmogi'>
             <Div className='moodBlock'>
                 <img className='emogiImg' src={Normal} alt='Beutiful'/>
-                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={go} data-to="emoji">
+                <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={() => handleButtonClick('normal')} data-to="emoji">
                     <img className='imgBackToEmojiSerch' src={BackToEmogiSerch} alt='back' />
                 </Button>
             </Div>
