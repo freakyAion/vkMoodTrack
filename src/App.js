@@ -12,24 +12,12 @@ import SerchEmoji from './panels/SerchEmoji';
 import BeutifulEmogi from './panels/BeutifulEmogi';
 import GoodEmogi from './panels/GoodEmogi';
 import NormalEmogi from './panels/NormalEmogi';
-import BadEmoji from './panels/Emoji/BadEmoji';
-import VeryBadEmoji from './panels/Emoji/VeryBadEmoji';
+import BadEmoji from './panels/BadEmoji';
+import VeryBadEmoji from './panels/VeryBadEmoji';
 import StatisticsEmogi from './panels/StatisticsEmogi';
 import { render } from 'react-dom';
 
 const App = () => {
-
-	const initialEmotions = ['empty', 'empty', 'empty'];
-	const [emotions, setEmotions] = useState(initialEmotions);
-	const [currentIndex, setCurrentIndex] = useState(2);
-
-	const handleButtonClick = (emotion) => {
-	    const updatedEmotions = [...emotions];
-	    updatedEmotions[currentIndex] = emotion;
-	    const nextIndex = (currentIndex - 1) % emotions.length;
-	    setEmotions(updatedEmotions);
-	    setCurrentIndex(nextIndex);
-	};
 
 	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
@@ -46,6 +34,19 @@ const App = () => {
 
 	const go = e => {
 		setActivePanel(e.currentTarget.dataset.to);
+	};
+
+	const initialEmotions = ['empty', 'empty', 'empty'];
+	const [emotions, setEmotions] = useState(initialEmotions);
+	const [currentIndex, setCurrentIndex] = useState(2);
+
+	const handleButtonClick = (emotion) => {
+	    const updatedEmotions = [...emotions];
+	    updatedEmotions[currentIndex] = emotion;
+	    const nextIndex = (currentIndex - 1) % emotions.length;
+	    setEmotions(updatedEmotions);
+	    setCurrentIndex(nextIndex);
+		go;
 	};
 
 	return (

@@ -1,11 +1,11 @@
 import React from "react";
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar, Footer, WriteBar } from '@vkontakte/vkui';
 
-import '../../style/Emogi.css';
+import '../style/Emogi.css';
 
-import CloseButton from '../../img/CloseButton.svg'
-import Bad from '../../img/Emoji/Bad.svg';
-import BackToEmogiSerch from '../../img/BackToEmogiSerch.svg';
+import CloseButton from '../img/CloseButton.svg'
+import Bad from '../img/Emoji/Bad.svg';
+import BackToEmogiSerch from '../img/BackToEmogiSerch.svg';
 
 const BadEmoji = ({id, go, handleButtonClick}) => (
     <Panel id={id}>

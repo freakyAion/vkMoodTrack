@@ -52,9 +52,6 @@ const Home = ({ id, go, fetchedUser, emotions}) => {
 				<Button className='button' stretched size="l" mode="secondary" onClick={go} data-to="statistics">
 					<img className="imgInButton" src={Statistics} alt="Statistics"/>
 				</Button>
-				<button onClick={() => handleButtonClick("bad")}>
-					Test
-				</button>
 			</Div>
 			{/*<UserFooter />*/}
 		</Group>

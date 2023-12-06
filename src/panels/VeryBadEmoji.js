@@ -1,11 +1,11 @@
 import React from "react";
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar, Footer, WriteBar } from '@vkontakte/vkui';
 
-import '../../style/Emogi.css';
+import '../style/Emogi.css';
 
-import CloseButton from '../../img/CloseButton.svg'
-import VeryBad from '../../img/Emoji/VeryBad.svg';
-import BackToEmogiSerch from '../../img/BackToEmogiSerch.svg';
+import CloseButton from '../img/CloseButton.svg'
+import VeryBad from '../img/Emoji/VeryBad.svg';
+import BackToEmogiSerch from '../img/BackToEmogiSerch.svg';
 
 const VeryBadEmoji = ({id, go, handleButtonClick}) => (
     <Panel id={id}>
@@ -13,7 +13,7 @@ const VeryBadEmoji = ({id, go, handleButtonClick}) => (
 
         <Group>
         <Div className='buttonBack'>
-			    <Button className='closeButton' stretched size="l" mode="secondary" onClick={() => handleButtonClick('awful')} data-to="home">
+			    <Button className='closeButton' stretched size="l" mode="secondary" onClick={go} data-to="home">
 				    <img className="imgClose" src={CloseButton} alt="Close"/>
 			    </Button>
 		    </Div>
@@ -25,7 +25,7 @@ const VeryBadEmoji = ({id, go, handleButtonClick}) => (
             <Div className='elementsEmogi'>
                 <Div className='moodBlock'>
                     <img className='emogiImg' src={VeryBad} alt='Beutiful'/>
-                    <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={go} data-to="emoji">
+                    <Button className='btnBackToEmojiSerch' stretched size='l' mode='secondary' onClick={() => handleButtonClick('awful')} data-to="emoji">
                         <img className='imgBackToEmojiSerch' src={BackToEmogiSerch} alt='back' />
                     </Button>
                 </Div>
